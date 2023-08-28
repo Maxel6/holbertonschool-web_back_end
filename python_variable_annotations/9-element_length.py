@@ -13,7 +13,8 @@ def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
         lst (Iterable[Sequence]): An iterable containing sequences.
 
     Returns:
-        List[Tuple[Sequence, int]]: A list of tuples where each tuple contains
+        List[Tuple[Sequence, int]]: A list of tuples wherex
+        each tuple contains
         a sequence from lst and its length as an integer.
     """
     return [(i, len(i)) for i in lst]
