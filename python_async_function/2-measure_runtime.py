@@ -19,8 +19,7 @@ async def measure_time(n: int, max_delay: int) -> float:
         float: Le temps d'exécution moyen par appel en secondes.
     """
     start_time = time.time()
-    tasks = [wait_n(max_delay) for _ in range(n)]
-    await asyncio.gather(*tasks)
+    await asyncio.gather(*(wait_n(max_delay) for _ in range(n)))
     end_time = time.time()
 
     total_time = end_time - start_time
