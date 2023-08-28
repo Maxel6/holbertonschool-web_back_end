@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from typing import Union, Tuple
 """
 takes a string k and an int OR float
