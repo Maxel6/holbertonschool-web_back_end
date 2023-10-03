@@ -1,16 +1,16 @@
-import { error } from "console";
+import { error } from 'console';
 
-export default function handleResponseFromAPI(promise){
-    return promise
+export default function handleResponseFromAPI(promise) {
+  return promise
     .then(() => {
-        console.log('Got a response from the API');
-        return {
-            status: 200,
-            body: 'success',
-        };
+      console.log('Got a response from the API');
+      return {
+        status: 200,
+        body: 'success',
+      };
     })
-    .catch(() =>{
-        console.log('Got a response from the API');
-        return new Error();
+    .catch(() => {
+      console.log('Got a response from the API');
+      return new Error();
     });
 }
