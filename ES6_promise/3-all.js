@@ -17,12 +17,8 @@ export default function handleProfileSignup() {
         body: resultString,
       };
     })
-    .catch((error) => {
-      console.error('Signup system offline', error);
-
-      return {
-        status: 500,
-        body: 'Signup system offline',
-      };
+    .catch(() => {
+      console.log('Signup system offline');
+      return new Error();
     });
 }
