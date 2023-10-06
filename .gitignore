@@ -1,2 +1,8 @@
 nodesource_setup.sh
 node_modules/
+package-lock.json
+package.json
+babel.config.js
+.eslintrc.js
+*-main.js
+*.test.js
